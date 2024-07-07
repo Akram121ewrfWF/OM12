@@ -27,12 +27,16 @@
           </div>
           <div class="collapse navbar-collapse" class="collapse" style="border: solid thin; padding: 5px 10px; border-radius: 10px;" id="navbarNavAltMarkup">
                 <div  class="navbar-nav w-100 d-flex justify-content-lg-between align-items-center">
-                  <div style="border:  blue;" id="Last-media">
+                  <div id="Last-media">
                         <a class="nav-link active" id="green" href="#" id="bold">ابدأ التداول الأن</a>
                         <i class="fa-light fa-left" style="color: red;"></i>
                     </div>
-                    <div class="dropdown">
-                    <a class="nav-link" aria-current="page" href="#" id="LOL" id="bold">خدمات التداول</a>
+                    <div class="dropdown" id="KOKI">
+                      <div >
+                        <a class="nav-link" href="#" id="bold" style="display: block;">خدمات التداول</a>
+                        <i class="fa-solid fa-circle-plus d-lg-none" style="color: #58ec18;" id="plus"></i>
+                        <i class="fa-solid fa-circle-minus d-lg-none" id="minus" style="color: #58ec18;"></i>
+                      </div>
                     <div id="media" class="content-parent d-flex flex-column  justify-content-center" style="padding-top: 30px;padding-bottom: 30px;translate: 418px;height: 23.6vh;">
                       <ul style="list-style: none;display: flex; justify-content: center; flex-direction: column; align-items: center;">
                           <h5 style="align-self: flex-end;">خدمات موقع ضمان</h5>
@@ -42,10 +46,10 @@
                     </div>
                   </div>
                     <a class="nav-link" href="#" id="bold">مقالات التداول</a>
-                        <a class="nav-link" href="#" id="bold" id="med">تقييم شركات التداول</a>
+                        <a class="nav-link" href="#" id="bold">تقييم شركات التداول</a>
                     <div class="dropdown">
                         <div>
-                          <div>
+                          <div dir="rtl">
                             <a class="nav-link" href="#" id="hover">شركات التداول</a>
                             <i class="fa-solid fa-circle-plus d-lg-none" style="color: #58ec18;" id="plus"></i>
                             <i class="fa-solid fa-circle-minus d-lg-none" id="minus" style="color: #58ec18;"></i>
@@ -314,8 +318,12 @@
         </div>   
         </div>
         <br>
-        <div class="container " id="content-Line-Three" style="border:  rebeccapurple">
-            <div class="col-2" id="col-1" style="margin-right: 6px;">
+        <!--  -->
+  
+        <!--  -->
+        <div class="container" id="content-Line-Three" style="border:  rebeccapurple">
+          <div class="collapse" id="collapseExample"></div>
+          <div class="col-2" id="col-1" style="margin-right: 6px;">
               <div>
               <a href="#" class="nav-link">فتح حساب</a>
               <a href="#" class="nav-link">تفاصيل الشركه</a>
@@ -618,36 +626,64 @@
               </div>
               <br>
               <footer>
-                <div class="container d-flex" style="border: solid #0000ff;gap: 10px; flex-direction: row-reverse;height: 40vh;margin-bottom: -40px;">
-                <div class="col-3" style="border:  red;">
-                  <img src="logo.webp" alt="Image" title="Image" style="width: 100%;">
-                  <p>موقع ضمان هو موقع يختص بتقييم شركات التداول في الدول العربية، ويقدم موارد تعليمية عن تداول الفوركس من خبراء التداول.</p>
+                <div  class="container d-flex  flex-column flex-lg-row-reverse flex-md-row-reverse" style="border:  #0000ff;gap: 10px; flex-direction: row-reverse;height: 40vh;margin-bottom: -40px;" id="footer">
+                  <div class="col-3 " id="FT" style="border:  red;">
+                  <img src="logo.webp" alt="Image" id="footer-img" title="Image" style="width: 100%;">
+                  <p class="text-sm-end">موقع ضمان هو موقع يختص بتقييم شركات التداول في الدول العربية، ويقدم موارد تعليمية عن تداول الفوركس من خبراء التداول.</p>
                 </div>
-                <div class="col-3" style="border:  #0000ff;">
-                  <p id="title">موقع ضمان</p>
-                  <a href="#" class="nav-link">شروط الإستخدام</a>
-                  <a href="#" class="nav-link">سياسة الخصوصية</a>
-                  <a href="#" class="nav-link">سياسة تقييم شركات التداول</a>
-                  <a href="#" class="nav-link">الإبلاغ عن شركات التداول النصابة</a>
+                <div class="col-3 " id="FT" style="border:  #0000ff;">
+                  <p id="title" class="text-sm-end">موقع ضمان</p>
+                  <a href="#" class="nav-link text-sm-end">شروط الإستخدام</a>
+                  <a href="#" class="nav-link text-sm-end">سياسة الخصوصية</a>
+                  <a href="#" class="nav-link text-sm-end">سياسة تقييم شركات التداول</a>
+                  <a href="#" class="nav-link text-sm-end">الإبلاغ عن شركات التداول النصابة</a>
                 </div>
-                <div class="col-3" style="border:  rebeccapurple;">
-                  <p id="title">أفضل شركات التداول</p>
-                  <a href="#" class="nav-link">افضل شركات التداول في الكويت</a>
-                  <a href="#" class="nav-link">أفضل شركات التداول في البحرين</a>
-                  <a href="#" class="nav-link">افضل شركات التداول في قطر</a>
-                  <a href="#" class="nav-link">افضل شركات التداول في الامارات</a>
+                <div class="col-3 col-md-3" id="FT" style="border:  rebeccapurple;">
+                  <p id="title" class="text-sm-end">أفضل شركات التداول</p>
+                  <a href="#" class="nav-link text-sm-end">افضل شركات التداول في الكويت</a>
+                  <a href="#" class="nav-link text-sm-end">أفضل شركات التداول في البحرين</a>
+                  <a href="#" class="nav-link text-sm-end">افضل شركات التداول في قطر</a>
+                  <a href="#" class="nav-link text-sm-end">افضل شركات التداول في الامارات</a>
                 </div>
-                <div class="col-3" style="border:  orange;">
-                <p id="title">شركات تداول مرخصة</p>
-                <a href="#" class="nav-link">شركات التداول المرخصة في العراق</a>
-                <a href="#" class="nav-link">شركات التداول المرخصة في مصر</a>
-                <a href="#" class="nav-link">شركة التداول المرخصة في لبنان</a>
-                <a href="#" class="nav-link">شركة التداول المرخصة في تركيا</a>
+                <div class="col-3 col-md-3" id="FT" style="border:  orange;">
+                <p id="title" class="text-sm-end">شركات تداول مرخصة</p>
+                <a href="#" class="nav-link text-sm-end">شركات التداول المرخصة في العراق</a>
+                <a href="#" class="nav-link text-sm-end">شركات التداول المرخصة في مصر</a>
+                <a href="#" class="nav-link text-sm-end">شركة التداول المرخصة في لبنان</a>
+                <a href="#" class="nav-link text-sm-end">شركة التداول المرخصة في تركيا</a>
               </div>
             </div>
+            <div class="d-none d-sm-block d-sm-none">
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+          </div>
             <div class="container"><hr></div>
             <div dir="rtl" style="text-align: center;">
-              <div class="container" style="border: solid green;">
+              <div class="container" style="border:  green;">
               <p><b>إدارة المخاطر :</b>التداول على العقود مقابل الفروقات في الأسواق المالية ينطوي على مخاطر عالية وبموجب ذلك رأس المال معرض للخسارة جزئيا او كاملا، لذلك ينصح التداول بمبالغ يمكن أن تتحمل خسارتها.</p>
               <p><b>إخلاء المسؤولية :</b>إن موقع ضمان غير مسؤول بأي شكل عن أي خسارة في الأموال يتعرض لها العميل أو المتداول من خلال التداول في الأسواق المالية، أو أي ضرر ناتج عن الإستناد لتقييمات المتداولين، المقالات أو حتى تصنيف شركات ووسطاء التداول الأفضل في الدول العربية.</p><br>
               <div id="End" class="d-flex justify-content-center" style="border:  red;gap: 20px;">

@@ -120,7 +120,7 @@ main h2,main h4{
     /* border: solid blue; */
     margin-top: 2px;
 }
-#content-Line-Four, #content-Line-Three,#content-Line-One,#content-Line-Two{
+#content-Line-Four, #content-Line-Three ,#content-Line-One,#content-Line-Two{
     /* border: solid red; */
     height: 51vh;
     /* padding-left: 8px; */
