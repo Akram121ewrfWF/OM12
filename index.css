@@ -15,6 +15,15 @@
     padding: 10px 15px;
     box-shadow: 0 0 10px 0 #000;
 }
+/*  */
+.none{
+    display: none !important;
+    }
+    .block{
+        display: block !important;
+    }
+    #B{display: none !important;}
+/*  */
 #minus{display: none;}
 /* .add{display: block;} */
 .dropdown:hover .content-parent{

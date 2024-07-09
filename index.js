@@ -42,5 +42,16 @@ this.window.onscroll = function(){
         Line_Four.style.transform ='scale(0)'
     }
 }
+let btn = document.getElementById('btn');
+let Plus = document.getElementById('pluss');
+let minus = document.getElementById('minus');
+
+
+btn.onclick = function(){
+    Plus.classList.toggle('none');
+    minus.classList.toggle('none');
+    minus.classList.toggle('block');
+
+}
 }
 
