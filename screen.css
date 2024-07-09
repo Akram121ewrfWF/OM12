@@ -2,7 +2,7 @@
     #media{display: none !important;}
 a.nav-link + .dropdown{order: -4; width: 100%;}
 .dropdown{border:  green thin;}
-a.nav-link + .dropdown > div > div{display: flex;align-items: center; gap: 6px;width: 100%;border-bottom: solid thin;}
+a.nav-link + .dropdown > div > div{display: flex;align-items: center; gap: 6px;width: 100%;border:  thin;}
 .dropdown + #bold{order: -2;width: 100% ;border-top: solid thin ;border-bottom: solid  thin;} 
 .dropdown + #bold + #bold{width: 100%;}
 /* .dropdown > #bold{width: 100%;} */
@@ -30,6 +30,10 @@ a.nav-link + .dropdown > div > div{display: flex;align-items: center; gap: 6px;w
     #footer #FT{width: 100%;text-align: center; margin-bottom: 15px;border-bottom: solid thin !important}
     #footer #FT > #footer-img{width: 77% !important;}
     #card-footer{height: auto !important};
+}
+@media screen and (max-width: 990px){
+    body{background-color: brown;}
+    #hover, #plus{display: none;}
 }
 @media (min-width: 573px) and (max-width: 767.33px) {
     #card{width: 100% !important;}
